@@ -6,13 +6,52 @@ body {
   padding: 0;
   background-color: #f9f9f9;
   color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body takes up the full viewport height */
 }
 
+/* Sidebar Styles */
+aside#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 200px;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure the sidebar is above other content */
+}
+
+aside#sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+aside#sidebar ul li {
+  margin: 15px 0;
+}
+
+aside#sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+aside#sidebar ul li a:hover {
+  color: #007BFF;
+}
+
+/* Header Styles */
 header {
   background-color: #007BFF;
   color: white;
   padding: 20px;
   text-align: center;
+  margin-left: 200px; /* Offset by sidebar width */
 }
 
 header h1 {
@@ -25,10 +64,14 @@ header p {
   font-size: 1.2rem;
 }
 
+/* Main Content Styles */
 main {
+  flex: 1;
   padding: 20px;
+  margin-left: 200px; /* Offset by sidebar width */
   max-width: 1200px;
   margin: 0 auto;
+  padding-left: 220px; /* Add padding to avoid overlap with sidebar */
 }
 
 section {
@@ -85,10 +128,11 @@ ul {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Footer Styles */
 footer {
   text-align: center;
   padding: 20px;
   background-color: #007BFF;
   color: white;
-  margin-top: 40px;
+  margin-left: 200px; /* Offset by sidebar width */
 }
