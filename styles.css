@@ -8,10 +8,9 @@ body {
   color: #333;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Ensure the body takes up the full viewport height */
+  min-height: 100vh;
 }
 
-/* Sidebar Styles */
 aside#sidebar {
   position: fixed;
   top: 0;
@@ -22,7 +21,7 @@ aside#sidebar {
   color: white;
   padding: 20px;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-  z-index: 1000; /* Ensure the sidebar is above other content */
+  z-index: 1000;
 }
 
 aside#sidebar ul {
@@ -45,13 +44,12 @@ aside#sidebar ul li a:hover {
   color: #007BFF;
 }
 
-/* Header Styles */
 header {
   background-color: #007BFF;
   color: white;
   padding: 20px;
   text-align: center;
-  margin-left: 200px; /* Offset by sidebar width */
+  margin-left: 200px;
 }
 
 header h1 {
@@ -64,14 +62,14 @@ header p {
   font-size: 1.2rem;
 }
 
-/* Main Content Styles */
+
 main {
   flex: 1;
   padding: 20px;
-  margin-left: 200px; /* Offset by sidebar width */
+  margin-left: 200px;
   max-width: 1200px;
   margin: 0 auto;
-  padding-left: 220px; /* Add padding to avoid overlap with sidebar */
+  padding-left: 220px;
 }
 
 section {
@@ -128,11 +126,11 @@ ul {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer Styles */
+
 footer {
   text-align: center;
   padding: 20px;
   background-color: #007BFF;
   color: white;
-  margin-left: 200px; /* Offset by sidebar width */
+  margin-left: 200px;
 }
